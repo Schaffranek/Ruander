@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Unit teszt feladat</title>
+	<script type="text/javascript">
+
+		//<!-- Ide jön  a feladat megoldása... -->
+		function kivalogatParosOtven(szamok) {
+			var eredmeny = [];
+			for (var i = 0; i < szamok.length; i++) {
+				var szam = szamok[i]; if (szam > 50 && szam % 2 == 0) {
+					eredmeny.push(szam);
+				}
+			}
+			return eredmeny;
+		}
+
+		function aBetukSzamaDiv() {
+			var div = document.querySelector('body div');
+			var szoveg = div.textContent;
+			var szam = 0;
+			for (var i = 0; i < szoveg.length; i++) {
+				var karakter = szoveg[i];
+				if (karakter == 'a') {
+					szam++;
+				}
+			}
+			return szam;
+		}
+
+		//< !--Idáig -->
+	</script>
+	<script src="testBaseUnit.js"></script>
+</head>
+
+<body>
+	<div></div>
+	<hr>
+	<div id="testResult">
+		<h2>Tesztek</h2>
+	</div>
+</body>
+
+</html>
